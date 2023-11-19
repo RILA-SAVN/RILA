@@ -25,11 +25,11 @@
   </head>
   <body>
       <div class="header">
-        <h1 class="head">Zero-shot Semantic Audio-Visual Navigation[TODO]</h1>
+        <h1 class="head">RILA: Reflective and Imaginative Language Agent for Zero-Shot Semantic Audio-Visual Navigation</h1>
         <div class="authors">Anonymous Author(s)</div>
         <div class="intro">
-          We propose a self-addaptive agent for visual navigation that learns
-          via self-supervised interaction with the environment[TODO].
+          we propose our Reflective and Imaginative Language Agent (RILA), <br>
+          leveraging the inherent commonsense reasoning capabilities of LLMs to perform zero-shot SAVN.
         </div>
          <div class="line"></div>
       </div>
@@ -40,33 +40,36 @@
           <div class="guideme">Abstract</div>
           <div style="width:50%; text-align: left; float: left">
             <div class="abstract">
-              Large Language Models (LLMs) have showcased impressive reasoning
-              capability on visual and language information with the help of
-              auxiliary visual perception modules. However, how to apply its
-              reasoning ability in a multimodal embodied environment (e.g., with
-              both audio and visual information) remains an under-explored
-              problem.
+              We leverage Large Language Models (LLM) for zero-
+              shot Semantic Audio Visual Navigation (SAVN). Existing
+              methods utilize extensive training demonstrations for rein-
+              forcement learning, yet achieve relatively low success rates
+              and lack generalizability. The intermittent nature of au-
+              ditory signals further poses additional obstacles to infer-
+              ring the goal information. 
             </div>
             <div class="abstract">
-              In this work, we introduce an LLM-based agent for Semantic Audio
-              Visual Navigation, where objects in the environment make sporadic
-              sounds consistent with their semantic meaning. One important
-              challenge is how to feed the audio and visual information to LLMs
-              for reasoning the navigation action. To solve this challenge, we
-              propose two perception modules, namely an audio perception module
-              that transforms the audio into a rough goal location and goal
-              category, and a visual perception module that transforms the RGB-D
-              observation into a semantic top-down map. Then, we describe this
-              information in text form to LLM for reasoning an action that leads
-              to the sound-emitted object.
+              To address this challenge, we
+              present the Reflective and Imaginative Language Agent
+              (RILA). By employing multi-modal models to process sen-
+              sory data, we instruct an LLM-based planner to actively ex-
+              plore the environment. During the exploration, our agent
+              adaptively evaluates and dismisses inaccurate perceptual
+              descriptions. Additionally, we introduce an auxiliary LLM-
+              based assistant to enhance global environmental compre-
+              hension by mapping room layouts and providing strategic
+              insights. Through comprehensive experiments and analy-
+              sis, we show that our method outperforms relevant base-
+              lines without training demonstrations from the environment
+              and complementary semantic information
             </div>
-            <div class="abstract">
+            <!-- <div class="abstract">
               Through comprehensive experiments and analysis, we show that our
               method outperforms relevant baselines without training
               demonstrations from the environment and complementary semantic
               information. Furthermore, we provide a comprehensive analysis of
               diverse regimes under the soundspace task.
-            </div>
+            </div> -->
           </div>
           <img
             class="image"
