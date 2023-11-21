@@ -51,7 +51,7 @@
               During the exploration, our agent adaptively evaluates and dismisses inaccurate perceptual descriptions. 
               Additionally, we introduce an auxiliary LLM-based assistant to enhance global environmental comprehension by mapping room layouts and providing strategic
               insights. Through comprehensive experiments and analysis, we show that our method outperforms relevant baselines without training demonstrations from the environment
-              and complementary semantic information
+              and complementary semantic information.
             </div>
             <!-- <div class="abstract">
               Through comprehensive experiments and analysis, we show that our
@@ -119,8 +119,8 @@
             </div>
             <div class="method-abstract">
               &nbsp;&nbsp;&nbsp;&nbsp;- Planning<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Planner<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Assistant: Region Imagination & Suggestion
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Reflective Planner (RefPlanner)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Imaginative Assistant (ImaAssistant): Region Imagination & Suggestion
             </div>
             <div class="method-abstract">
               More details are shown in our paper.
@@ -143,16 +143,16 @@
 
 
         <div class="container">
-          <div class="guideme">Planner Prompting Example</div>
+          <div class="guideme">RefPlanner Prompting Example</div>
           <div style="width:20%; margin-left:5% ;margin-top: 2%;text-align: left; float: left">
             <div class="prompt-abstract">
-              Here is an example of how Planner and Assistant works (simplified):
+              Here is an example of how RefPlanner and ImaAssistant works (simplified):
             </div>
             <div class="prompt-abstract">
-              Assistant: Facilitate commonsense in LLM to infer the type of a region and imagine its size. Then give Planner its suggestion
+              ImaAssistant: Facilitate commonsense in LLM to infer the type of a region and imagine its size. Then give RefPlanner its suggestion
             </div>
             <div class="prompt-abstract">
-              Planner: According to perceptual information and Assistant suggestion, make choices about frontiers.
+              RefPlanner: According to perceptual information and ImaAssistant suggestion, make choices about frontiers.
             </div>
             <div class="prompt-abstract">
               More details are shown in our paper.
